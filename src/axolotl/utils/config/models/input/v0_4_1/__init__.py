@@ -125,6 +125,9 @@ class SFTDataset(BaseModel):
     drop_system_message: Optional[bool] = None
 
     trust_remote_code: Optional[bool] = False
+    
+    # custom for genchats
+    custom_template: Optional[Dict[str, Any]] = None 
 
 
 class UserDefinedDPOType(BaseModel):
