@@ -204,7 +204,7 @@ class SFTDataset(BaseModel):
     roles: Optional[Dict[str, List[str]]] = None
     drop_system_message: Optional[bool] = None
     trust_remote_code: Optional[bool] = False
-        revision: Optional[str] = None
+    revision: Optional[str] = None
 
     @model_validator(mode="before")
     @classmethod
